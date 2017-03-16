@@ -1,0 +1,396 @@
+html,
+body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: gothamlight; /* Имя шрифта */
+    src: url(fonts/gotham-light.ttf); /* Путь к файлу со шрифтом */
+}
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+/*.menu-class{*/
+    /*background: #262626 !important;*/
+    /*border-bottom: 3px solid #171717;*/
+    /*height: 97px;*/
+/*}*/
+.logo{
+    background: url(../image/logo.png) no-repeat center;
+    height: 78px;
+}
+.menu{
+    max-width: 960px;
+    min-width: 960px;
+    margin: auto;
+}
+.menu-class .container{
+   width: 380px;
+}
+.menu-prt{
+    background: #262626;
+    border-bottom: 3px solid #171717;
+}
+.menu-ul a ,.language_menu a {
+    border: 2px #262626 solid;
+    border-radius: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #EEE;
+    font-size: 1.3rem;
+    padding: 6px 10px;
+    margin: 0 5px;
+}
+.menu-ul ,.language_menu {
+    list-style: none;
+    display: inline-block;
+}
+.menu-ul{
+    padding-left: 0;
+    margin-top: 30px;
+}
+.language_menu {
+    padding-left: 13px;
+}
+.menu-ul >li ,.language_menu >li {
+    display: inline-block;
+}
+.language_menu a ,.menu-ul a{
+    text-transform: uppercase;
+}
+
+.menu-ul a:hover ,.language_menu a:hover{
+    border-color: #d72e07;
+    color: #FFF;
+    text-decoration: none;
+}
+.create{
+    border: 2px #00a8ff solid;
+    border-radius: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #EEE;
+    font-size: 1.3rem;
+    padding: 6px 10px;
+    margin: 0 5px;
+    margin-left: 10%;
+}
+.create a{
+    color: #DDD;
+}
+.create a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+}
+.create span{
+    color: #838383;
+    font-size: 1rem;
+}
+.search-menu{
+    width: 110px;
+    background-color: #c72b0f;
+    background-image: url(../image/search-ico.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 97px;
+    border-bottom: 3px #b2250c solid;
+    float: right;
+}
+.clear_{
+    clear: both;
+}
+.image_header{
+    position: absolute;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+.image_header_pr{
+    position: relative;
+    height:561px;
+}
+.slogan{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.8rem;
+    color: #FFF;
+    font-weight: bold;
+}
+.buttons{
+    text-align: center;
+    margin-top: 30px;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+a.orange{
+    background-color: #D72E07;
+}
+a.green{
+    background-color: #88B949;
+}
+.buttons a{
+    display: inline-block;
+    padding: 7px 26px;
+    margin-right: 20px;
+    color: #FFF;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+.buttons a:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.info-bar{
+    width: 100%;
+    /*height: 80px;*/
+    padding: 20px 0 10px;
+    background-color: #262626;
+}
+.info-centralize{
+    width: 820px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.info-block{
+    float: left;
+    width: 230px;
+    margin-right:  60px;
+    color: #FFF;
+}
+.info{
+    margin-left: 12px;
+}
+.info-block > div{
+    float: left;
+}
+.digit {
+    font-size: 3.8rem;
+    line-height: 50px;
+}
+.info-centralize >div:last-child{
+    margin-right: 0;
+}
+
+
+/* start core modal style */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    max-width: 800px;
+    border-radius: 0;
+    border-top: 5px solid #c72b0f;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* end core modal style*/
+
+.create-account-header {
+    height: 120px;
+    background: #262626;
+}
+.account-title{
+    font-family: 'gothamlight';
+    font-size: 3rem;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0 5px 0;
+}
+.account-title-sub{
+    font-size: 1.3rem;
+    color: #FFF;
+    text-align: center;
+}
+.account-title-sub a{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-decoration: underline;
+    color: #FFF;
+}
+.account-title-sub a:hover{
+    color: #ff3000;
+    cursor: pointer;
+}
+.account-title-sub span{
+    font-family: 'gothamlight';
+    font-style: italic;
+}
+.create-account-body{
+    min-height: 400px;
+}
+.tab-switch{
+    margin: 20px 0 25px 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.tab-switch a.sel{
+    color: #FFF;
+    border-color: #d72e07;
+    background: #d72e07;
+}
+.tab-switch a{
+    color: #555;
+    border: 2px #FFF solid;
+    border-radius: 16px;
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.tab-switch a:hover{
+    border-color: #d72e07;
+    text-decoration: none;
+}
+#company{
+    padding: 0 0 0 20px;
+}
