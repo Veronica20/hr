@@ -26,3 +26,15 @@ window.onclick = function(event) {
 		modal.style.display = "none";
 	}
 };
+
+$('.tab-switch a').on('click',function (e) {
+	$('.tab-switch a').removeClass() ;
+	$(this).addClass('active');
+	if(e.target.title == 'company'){
+			$('.company_form').show();
+			$('.user_form').hide();
+	}else {
+			$('.company_form').hide();
+			$('.user_form').show();
+	}
+});

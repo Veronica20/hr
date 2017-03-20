@@ -40,7 +40,7 @@ AppAsset::register($this);
 					<li><a>Հայ</a></li>
 				</ul>
 				<div class="create">
-					<a>create account</a>
+					<a id="myBtn">create account</a>
 					<span>or</span>
 					<a>log in </a>
 				</div>
@@ -104,8 +104,7 @@ AppAsset::register($this);
 				</div>
 		</div>
 	</div>
-	<!-- Trigger/Open The Modal -->
-	<button id="myBtn">Open Modal</button>
+
 
 		<!-- The Modal -->
 		<div id="myModal" class="modal">

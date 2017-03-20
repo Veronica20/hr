@@ -34,6 +34,7 @@ class Company extends \yii\db\ActiveRecord
             [['password'], 'string'],
             [['phone'], 'integer'],
             [['name', 'email', 'tin', 'person_title'], 'string', 'max' => 255],
+            [['name', 'email', 'tin', 'person_title','phone','password'], 'required'],
         ];
     }
 

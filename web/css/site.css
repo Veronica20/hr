@@ -394,3 +394,280 @@ a.green{
 #company{
     padding: 0 0 0 20px;
 }
+.company_form{
+    display: none;
+}
+
+.active{
+    background: #d72e07;
+}
+.tab-switch > a[class="active"]{
+    color: white;
+}
+.sing_form{
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #34ab00;
+    padding: 12px 20px 15px 20px;
+    min-width: 320px;
+    text-transform: uppercase;
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 -5px 0 #2a8900;
+    -webkit-box-shadow: inset 0 -5px 0 #2a8900;
+    box-shadow: inset 0 -5px 0 #2a8900;
+    margin: 0 160px 9px 160px;
+}
+#profile_step{
+    margin: 50px auto;
+    width: 300px;
+}
+#profile_step #circles{
+    color: #FFF;
+    margin: 0 auto;
+    width: 180px;
+    height: 30px;
+}
+#profile_step #circles .circle.big{
+    position: relative;
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 2.0rem;
+}
+#profile_step #circles .circle{
+    background-color: #D9D9D9;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+#profile_step #circles .connector{
+    background-color: #D9D9D9;
+    float: left;
+    width: 100px;
+    height: 2px;
+    position: relative;
+    top: 15px;
+}
+#profile_step #circles .circle.small{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+#profile_step .title{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #444;
+    font-weight: bold;
+}
+#profile_step .note{
+    margin-top: 10px;
+    color: #777;
+    text-style: italic;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.note{
+    font-family: 'gothamlight';
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.7rem;
+    color: rgba(0,0,0,.7);
+    text-transform: none;
+}
+.grid400{
+    width: 400px;
+}
+.grid{
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 20px;
+}
+.block-title-nobgr{
+    background: none !important;
+}
+.block-title{
+    font-size: 3.1rem;
+    letter-spacing: -1px;
+    color: rgba(0,0,0, .8);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    background: url(../images/block_title_bgr.png) no-repeat left bottom;
+}
+.marginleft120{
+    margin-left: 120px !important;
+}
+.grid440{
+    width: 440px;
+}
+.attach-ico{
+    background: url(../image/attach_ico.png) no-repeat center left;
+}
+.margintop15{
+    margin-top: 15px !important;
+}
+.paddingright20{
+    padding-right: 20px !important;
+}
+.paddingleft40
+{
+    padding-left: 40px !important;
+}
+.grid180{
+    width: 180px;
+}
+.hr-form fieldset{
+    display: block;
+}
+.grid200{
+    width: 200px;
+}
+fieldset, img{
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#fileaddbtn{
+    background: #34ab00 url(../image/up.png) no-repeat 10px center;
+    min-height: 45px;
+    padding: 0 0 0 40px;
+    line-height: 4.5rem;
+    color: #FFF;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.margintop10{
+    margin-top: 10px !important;
+}
+.hr-form input[type="file"]{
+    background: #FFF;
+    padding: 10px;
+}
+.fileselect{
+    width: 150px;
+    position: absolute;
+    visibility: hidden;
+}
+.padding28{
+    padding: 28px !important;
+}
+.input-group-border{
+    border: 1px solid #e0e2e2 !important;
+    display: inline-block;
+}
+.grid230 {
+    width: 230px;
+}
+.marginright30{
+    margin-right: 30px !important;
+}
+.grid290{
+    width: 290px;
+}
+.hr-form section{
+    display: block;
+    float: left;
+    width: 100%;
+}
+.filefield .profile-photo{
+    background: url(../image/photo.png) no-repeat center center !important;
+}
+#photoaddbtn{
+    position: absolute;
+    background-color: #34ab00;
+    background-image: url(../image/lng_plus.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    width: 136px;
+    bottom: 10px;
+    left: 14px;
+    color: #FFF;
+    font-size: 1.6rem;
+    padding: 12px 0 12px 40px;
+    text-transform: uppercase;
+}
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, ul, ol{
+    font-style: normal;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+.filefield .photo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: 2px dashed #d9d9d9;
+    cursor: default;
+}
+.hr-form label{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: rgba(0,0,0, .7);
+}
+.label105{
+    height: 105px;
+}
+.hr-form .input input, .hr-form .select select, .hr-form .textarea textarea{
+    display: block;
+    font-family: 'gothammedium';
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #d9d9d9;
+    padding: 14px;
+    margin-top: 10px;
+    width: 100%;
+    color: rgba(0,0,0, .6);
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.hr-form .tooltip-bottom-left.for-input{
+    top: 80% !important;
+}
+.hr-form .tooltip-bottom-left{
+    top: 100%;
+    margin-top: 15px;
+}
+.hr-form .tooltip{
+    position: absolute;
+    z-index: 1;
+    left: -9999px;
+    padding: 10px 15px 10px;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    opacity: 0;
+    transition: margin 0.3s, opacity 0.3s;
+    -o-transition: margin 0.3s, opacity 0.3s;
+    -ms-transition: margin 0.3s, opacity 0.3s;
+    -moz-transition: margin 0.3s, opacity 0.3s;
+    -webkit-transition: margin 0.3s, opacity 0.3s;
+}
+.hr-form .input-group-border .note{
+    margin-top: 10px;
+    color: #34ab00;
+    text-style: italic;
+    font-size: 1.4rem;
+}

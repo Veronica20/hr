@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Company;
+use app\models\User;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -64,8 +65,32 @@ class SiteController extends Controller
       return $this->render('index');
     }
 
-	  public function actionCompanyreg(){
+    public function actionProfile(){
+      $user  = new User();
+      if (Yii::$app->request->isPost) {
+          $user->load(Yii::$app->request->post());
+          if ($user->save()) {
+              return $this->redirect(['/esimur']);
+          }
+      }
 
+      return  $this->render('profile', [
+          'user' => $user
+      ]);
+    }
+
+	  public function actionCompanyreg(){
+	  }
+
+	  public function actionUserreg(){
+          $user = new User;
+          if($user->load(Yii::$app->request->post()) && $user->validate()){
+              $user->setAttributes(Yii::$app->request->post('User'));
+              if($user->save()){
+                  $this->redirect('profile');
+              }
+
+          }
 	  }
 
     /**
